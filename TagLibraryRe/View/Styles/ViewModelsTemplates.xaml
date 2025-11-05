@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:userControls="clr-namespace:TagLibraryRe.View.UserControls"
+                    xmlns:ucvm="clr-namespace:TagLibraryRe.ViewModel.UserControls"
+                    xmlns:viewModel="clr-namespace:TagLibraryRe.ViewModel">
+    <DataTemplate DataType="{x:Type ucvm:TagsControlViewModel}">
+        <userControls:TagsControl/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type ucvm:TagsDisplayControlViewModel}">
+        <userControls:TagsDisplayControl/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:BaseViewModel}">
+        <userControls:Base/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type ucvm:FilesControlViewModel}">
+        <userControls:FilesControl/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type ucvm:MainInitialPlaceHolderControlViewModel}">
+        <userControls:MainInitialPlaceHolderControl/>
+    </DataTemplate>
+</ResourceDictionary>

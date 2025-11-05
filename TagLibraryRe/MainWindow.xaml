@@ -1,0 +1,47 @@
+﻿<Window x:Class="TagLibraryRe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TagLibraryRe"
+        xmlns:userControls="clr-namespace:TagLibraryRe.View.UserControls"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="MainWindow" Height="1080" Width="1920" Background="#222222">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+       
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <ContentControl Content="{Binding SelectedViewModelMain}" Grid.Column="1"/>
+            <Border BorderBrush="White" BorderThickness="2">
+                <ContentControl Content="{Binding SelectedViewModelSide}"/>
+            </Border>
+            
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ContentControl Content="{Binding TagsControl}" Grid.Column="0"/>
+            <ContentControl Content="{Binding FilesControl}" Grid.Column="1"/>
+            
+        </Grid>
+
+        <userControls:TitleBarControl/>
+
+    </Grid>
+</Window>

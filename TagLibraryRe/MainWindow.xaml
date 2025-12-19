@@ -7,13 +7,14 @@
         xmlns:userControls="clr-namespace:TagLibraryRe.View.UserControls"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="MainWindow" Height="1080" Width="1920" Background="#222222">
+        Title="MainWindow" Height="1080" Width="1920" Background="#222222"
+        WindowStartupLocation="CenterScreen">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
     <Grid Background="Transparent">
         <Grid.RowDefinitions>
-            <RowDefinition Height="120"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>

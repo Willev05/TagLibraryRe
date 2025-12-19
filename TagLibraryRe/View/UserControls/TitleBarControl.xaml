@@ -5,15 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TagLibraryRe.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="120" d:DesignWidth="1920">
+             d:DesignHeight="60" d:DesignWidth="1920">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="60"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="360"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
 
-        <local:SearchBarControl Grid.Column="1" Margin="20"/>
+        <local:SearchBarControl Grid.Column="1" Margin="20,10"/>
         <local:WindowButtonsControl Grid.Column="2"/>
         <Image Source="Data/cat.jpg" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
     </Grid>

@@ -5,13 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TagLibraryRe.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="1920">
+             d:DesignHeight="60" d:DesignWidth="1920">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="60"/>
         </Grid.ColumnDefinitions>
-        <Image Source="Data/searchIcon.png" HorizontalAlignment="Right" Grid.Column="1"/>
-        <TextBox Background="Transparent" BorderBrush="#000000" VerticalContentAlignment="Center" FontSize="32" TextAlignment="Center"/>
+        <Image Source="Data/searchIcon.png" HorizontalAlignment="Right" Grid.Column="1" RenderTransformOrigin="0.249,0.423"/>
+        <TextBox Background="Transparent" VerticalContentAlignment="Center" FontSize="28" TextAlignment="Center"/>
     </Grid>
 </UserControl>

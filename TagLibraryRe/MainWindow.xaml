@@ -37,9 +37,9 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <ContentControl Content="{Binding TagsControl}" Grid.Column="0"/>
-            <ContentControl Content="{Binding FilesControl}" Grid.Column="1"/>
-            
+            <userControls:TagsControl Grid.Column="0"/>
+            <userControls:FilesControl Grid.Column="1"/>
+
         </Grid>
 
         <userControls:TitleBarControl/>

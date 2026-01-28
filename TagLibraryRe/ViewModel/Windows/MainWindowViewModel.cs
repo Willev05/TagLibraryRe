@@ -35,6 +35,7 @@ namespace TagLibraryRe.ViewModel
             _sideViewModel = new TagsDisplayControlViewModel();
 
             EventStore.Instance.ChangeMainVM += ChangeMainVM;
+            EventStore.Instance.ChangeSideVM += ChangeSideVM;
         }
 
         private void ChangeMainVM(object? sender, VMEventArgs e)
@@ -42,6 +43,15 @@ namespace TagLibraryRe.ViewModel
             MainViewModel = e.VM;
         }
 
-        
+        private void ChangeSideVM(object? sender, VMEventArgs e)
+        {
+            SideViewModel = e.VM;
+        }
+
+        public override void Dispose()
+        {
+            EventStore.Instance.ChangeMainVM -= ChangeMainVM;
+            EventStore.Instance.ChangeSideVM -= ChangeSideVM;
+        }
     }
 }

@@ -30,5 +30,11 @@ namespace TagLibraryRe.Model.Stores
         {
             ChangeMainVM?.Invoke(null, new VMEventArgs(vm));
         }
+
+        public event EventHandler<VMEventArgs> ChangeSideVM;
+        public void InvokeChangeSideVM(BaseViewModel vm)
+        {
+            ChangeSideVM?.Invoke(null, new VMEventArgs(vm));
+        }
     }
 }

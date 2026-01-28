@@ -27,7 +27,7 @@ namespace TagLibraryRe.ViewModel.UserControls
 
         private void CreateFile()
         {
-            StateStore.Instance.IsLibraryLoaded = true;
+            throw new NotImplementedException();
         }
 
         private void LoadExistingFile()

@@ -1,6 +1,8 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
+using System.Windows.Interop;
+using System.Windows.Media;
 
 namespace TagLibraryRe
 {
@@ -15,6 +17,7 @@ namespace TagLibraryRe
             //MainWindow = new MainWindow();
 
             //MainWindow.Show();
+            RenderOptions.ProcessRenderMode = RenderMode.SoftwareOnly;
 
             base.OnStartup(e);
         }

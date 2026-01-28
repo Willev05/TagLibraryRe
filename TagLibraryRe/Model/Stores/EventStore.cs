@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TagLibraryRe.Model.EventArgs;
+using TagLibraryRe.ViewModel;
 
 namespace TagLibraryRe.Model.Stores
 {
@@ -21,6 +23,12 @@ namespace TagLibraryRe.Model.Stores
 
                 return _instance; 
             } 
+        }
+
+        public event EventHandler<VMEventArgs> ChangeMainVM;
+        public void InvokeChangeMainVM(BaseViewModel vm)
+        {
+            ChangeMainVM?.Invoke(null, new VMEventArgs(vm));
         }
     }
 }

@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal">
             <Button Width="100" Content="New" Command="{Binding NewTag}"/>
-            <Button Width="100" Content="Remove"/>
+            <Button Width="100" Content="Remove" Command="{Binding RemoveTag}"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TagLibraryRe.ViewModel.UserControls;
 
 namespace TagLibraryRe.View.UserControls
 {
@@ -23,6 +24,8 @@ namespace TagLibraryRe.View.UserControls
         public FilesControl()
         {
             InitializeComponent();
+            FilesControlViewModel vm = new FilesControlViewModel();
+            DataContext = vm;
         }
     }
 }

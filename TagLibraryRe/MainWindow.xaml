@@ -24,9 +24,9 @@
                 <ColumnDefinition Width="30*"/>
                 <ColumnDefinition Width="70*"/>
             </Grid.ColumnDefinitions>
-            <ContentControl Content="{Binding SelectedViewModelMain}" Grid.Column="1"/>
+            <ContentControl Content="{Binding MainViewModel}" Grid.Column="1"/>
             <Border BorderBrush="White" BorderThickness="2">
-                <ContentControl Content="{Binding SelectedViewModelSide}"/>
+                <ContentControl Content="{Binding SideViewModel}"/>
             </Border>
             
         </Grid>

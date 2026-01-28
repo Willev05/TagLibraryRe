@@ -12,7 +12,7 @@
                 <MenuItem Header="New" Command="{Binding NewFile}"/>
                 <MenuItem Header="Load" Command="{Binding LoadFile}"/>
             </MenuItem>
-            <MenuItem Header="Save" FontSize="16" Command="{Binding Save}"/>
+            <MenuItem Header="Save" FontSize="16" Command="{Binding SaveFile}"/>
         </Menu>
     </Grid>
 </UserControl>

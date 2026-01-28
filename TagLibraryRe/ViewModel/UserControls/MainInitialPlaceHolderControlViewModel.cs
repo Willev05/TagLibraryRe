@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TagLibraryRe.ViewModel.UserControls
 {
-    internal class MainInitialPlaceHolderControlViewModel
+    internal class MainInitialPlaceHolderControlViewModel : BaseViewModel
     {
     }
 }
